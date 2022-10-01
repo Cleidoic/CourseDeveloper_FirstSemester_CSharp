@@ -15,3 +15,27 @@ if (number_1 > number_2)
 else
 
     Console.WriteLine($"Число {number_2} больше {number_1}");
+
+/*Задача 2: Напишите программу, которая принимает на вход три числа
+и выдаёт максимальное из этих чисел.
+2, 3, 7 -> 7
+44 5 78 -> 78
+22 3 9 -> 22
+*/
+
+int num_1 = Convert.ToInt32(Console.ReadLine());
+int num_2 = Convert.ToInt32(Console.ReadLine());
+int num_3 = Convert.ToInt32(Console.ReadLine());
+
+if (num_1 > num_2 && num_1 > num_3)
+
+    Console.WriteLine($"Число {num_1} больше {num_2} и {num_3}");
+
+else if (num_2 > num_1 && num_2 > num_3)
+
+    Console.WriteLine($"Число {num_2} больше {num_1} и {num_3}");
+
+else 
+
+    Console.WriteLine($"Число {num_3} больше {num_1} и {num_2}");
+
